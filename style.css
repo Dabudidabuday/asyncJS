@@ -1,0 +1,42 @@
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+input,
+select {
+    padding: 10px 15px;
+    max-width: 200px;
+    background-color: seashell;
+    border-radius: 4px;
+}
+
+#form {
+    margin-top: 100px;
+    margin-right: auto;
+    padding: 20px 30px;
+    max-width: 450px;
+    background-color: tomato;
+    border-radius: 4px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    padding: 8px 10px;
+    border: 2px solid #eee;
+    border-radius: 4px;
+}
+
+.input-group label {
+    margin-right: 20px;
+}
+
+.submit {
+    display: block;
+    margin: 0 auto;
+    background-color: green;
+}
