@@ -2,19 +2,19 @@
 
 let form = document.querySelector('#form');
 
-let getCatalog = new Promise (
+// let getCatalog = new Promise (
 
-        function (resolve, reject) {
-            let data = fetch('https://vape-shop.herokuapp.com/catalog')
-                .then(data => {
-                    data.json()
-                    console.log(data)
-                });
-            resolve(data)
-        }
-)
+//         function (resolve, reject) {
+//             let data = fetch('https://vape-shop.herokuapp.com/catalog')
+//                 .then(data => {
+//                     data.json()
+//                     console.log(data)
+//                 });
+//             resolve(data)
+//         }
+// )
 
-console.log(getCatalog);
+// console.log(getCatalog);
 
 form.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -28,6 +28,8 @@ form.addEventListener('submit', function(event) {
     };
 
     console.log(data)
+    let formattedData = JSON.stringify(data);
+    console.log('formatted data', formattedData);
 
     fetch('https://vape-shop.herokuapp.com/catalog')
 
